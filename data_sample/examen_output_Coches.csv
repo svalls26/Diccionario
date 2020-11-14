@@ -1,0 +1,6 @@
+	Tipo_Vehiculo	Precio 	Altura	Largo	Tipo	Incremento_tipo_porcentaje	Porcentaje_Altura	Porcentaje_longitud
+4	C	5030	1.89	2.3	Coche	10	10	0
+5	C	5310	1.78	3.3	Coche	10	10	0
+6	C	2500	1.9	2.8	Coche	10	10	0
+8	C	1520	2.02	10.0	Coche	10	15	15
+10	C	26323	4.1	1.8	Coche	10	15	0
