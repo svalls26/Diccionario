@@ -1,0 +1,28 @@
+[2020-06-10 17:06:59]|| INFO || (logger.py:45) || *** Start Execution *** 
+ 
+[2020-06-10 17:06:59]|| INFO || (logger.py:46) || Execution Start 
+[2020-06-10 17:06:59]|| INFO || (main.py:39) || StartingPRACTICA2ETL 
+[2020-06-10 17:06:59]|| INFO || (practica.py:23) || Reading CSV File using Pandas 
+[2020-06-10 17:06:59]|| INFO || (practica.py:37) || SplitLetters function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:50) || FilterDeparment function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:50) || FilterDeparment function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:50) || FilterDeparment function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:62) || WeekSalary function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:62) || WeekSalary function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:62) || WeekSalary function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:74) || MonthSalary function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:74) || MonthSalary function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:74) || MonthSalary function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:85) || AgeBonus function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:85) || AgeBonus function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:85) || AgeBonus function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:99) || ProductivityBonus function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:99) || ProductivityBonus function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:99) || ProductivityBonus function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:144) || Business bonus 
+[2020-06-10 17:06:59]|| INFO || (practica.py:112) || Retention function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:112) || Retention function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:112) || Retention function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:128) || Write_data function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:128) || Write_data function 
+[2020-06-10 17:06:59]|| INFO || (practica.py:128) || Write_data function 
