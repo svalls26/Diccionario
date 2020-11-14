@@ -4,8 +4,28 @@ import src.env_settings as env
 import logging
 import sys
 from src.examen.examen import * 
+import os 
+s
+def save_names(name_files):
+    with open('name_files.txt', 'w') as fichero:
+        for name in name_files:
+            fichero.write('{0}\n'.format(name))
 
 
+name_files = []
+
+for root, dirs, files in os.walk(".", topdown=False):
+    
+    for name in files:
+        text = name.split('.')
+        print(name)
+        if 'txt' in name:
+            name_files.append(name)
+
+
+        
+print(name_files)
+save_names(name_files)
 
 def main():
     #Creating the Enviroment Variables
@@ -42,48 +62,7 @@ def main():
         Obj = Vehiculo(env_variables, logger)
         Obj.read_data()
         
-        #Create three different dataframes for each vehicle (C, L, R)
-        letter = "C"
-        df_Car = Obj.FilterVehiculo(letter)
-        Obj_Car = Coche(env_variables, logger, df_Car)
-        #print(df_Car)
-        letter = "L"
-        df_Maritime = Obj.FilterVehiculo(letter)
-        Obj_Maritime = Maritimo(env_variables, logger, df_Maritime)
-        #print(df_Maritime)
-        letter = "R"
-        df_Rail = Obj.FilterVehiculo(letter)
-        Obj_Rail = Rail(env_variables, logger, df_Rail)
-        #print(df_Rail)
-        
-        #Adding type vehicle column and calculate de price sale wihtout taxes
-        Obj_Car.SaleWithoutTax()
-        Obj_Maritime.SaleWithoutTax()
-        Obj_Rail.SaleWithoutTax()
-        
-        #Incremento por altura
-        Obj_Car.IncrementoAltura()
-        Obj_Maritime.IncrementoAltura()
-        Obj_Rail.IncrementoAltura()
-        
-        #Incremento longitud
-        Obj_Car.IncrementoLongitud()
-        Obj_Maritime.IncrementoLongitud()
-        Obj_Rail.IncrementoLongitud()
-        
-        #Calcular precio final
-        Obj_Car.PrecioFinal()
-        Obj_Maritime.PrecioFinal()
-        Obj_Rail.PrecioFinal()
-        
-        #Guardar CSV
-        name = "Coches.csv"
-        Obj_Car.write_data(name)
-        name = "Marítimo.csv"
-        Obj_Maritime.write_data(name)
-        name= "Rail.csv"
-        Obj_Rail.write_data(name)
-        
+
         
     except Exception as err:
         logger.logger.log(logging.ERROR, "\n Main function Error ({}".format(err) + ")")
