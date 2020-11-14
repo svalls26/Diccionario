@@ -1,6 +1,0 @@
-	Tipo_Vehiculo	Precio 	Altura	Largo	Tipo	Incremento_tipo_porcentaje	Porcentaje_Altura	Porcentaje_longitud
-0	L	1000	2.3	4.2	Maritimo	15	15	15
-1	L	15000	2.8	5.0	Maritimo	15	15	15
-2	L	15420	1.9	6.0	Maritimo	15	10	15
-3	L	12695	3.6	2.9	Maritimo	15	15	0
-11	L	15000	3.21	3.5	Maritimo	15	15	0
