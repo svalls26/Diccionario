@@ -3,29 +3,8 @@ import src.logger.logger as log
 import src.env_settings as env
 import logging
 import sys
-from src.examen.examen import * 
-import os 
-s
-def save_names(name_files):
-    with open('name_files.txt', 'w') as fichero:
-        for name in name_files:
-            fichero.write('{0}\n'.format(name))
+from src.examen.examen import *  
 
-
-name_files = []
-
-for root, dirs, files in os.walk(".", topdown=False):
-    
-    for name in files:
-        text = name.split('.')
-        print(name)
-        if 'txt' in name:
-            name_files.append(name)
-
-
-        
-print(name_files)
-save_names(name_files)
 
 def main():
     #Creating the Enviroment Variables
@@ -58,9 +37,12 @@ def main():
         logger.logger.log(logging.INFO, "Starting" +
                            env_variables.log_identifier + "ETL")
         
-        #Read csv in dataframe
-        Obj = Vehiculo(env_variables, logger)
-        Obj.read_data()
+        #Read names files
+        name_files = []
+        ObjFiles = nombreArchivos(env_variables, logger, name_files)
+        name_files = ObjFiles.SearchNames()
+        print(name_files)
+        ObjFiles.SaveNames()
         
 
         
