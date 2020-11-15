@@ -33,14 +33,14 @@ class LoadEnviroment:
             
             #Reading TEXT configuration
             #self.file_name = self.config['FILE_MANAGEMENT']['FILE_NAME']
-            #self.relative_path = self.config['FILE_MANAGEMENT']['RELATIVE_PATH']
-            #self.output_name = self.config['FILE_MANAGEMENT']['OUTPUT_FILE_NAME']
+            self.relative_path = self.config['FILE_MANAGEMENT']['RELATIVE_PATH']
+            self.output_name = self.config['FILE_MANAGEMENT']['OUTPUT_FILE_NAME']
             #self.operation = self.config['FILE_MANAGEMENT']['OPERATION']
             
             # Reading CSV configuration
-            self.file_name = self.config['CSV_FILE_MANGAMENT']['FILE_NAME']
-            self.relative_path = self.config['CSV_FILE_MANGAMENT']['RELATIVE_PATH']
-            self.output_file = self.config['CSV_FILE_MANGAMENT']['OUTPUT_FILE_NAME']
+            #self.file_name = self.config['CSV_FILE_MANGAMENT']['FILE_NAME']
+            #self.relative_path = self.config['CSV_FILE_MANGAMENT']['RELATIVE_PATH']
+            #self.output_file = self.config['CSV_FILE_MANGAMENT']['OUTPUT_FILE_NAME']
             
             #Management JSON configuration
             #self.file_name = self.config['JSON_MANAGEMENT']['FILE_NAME']
